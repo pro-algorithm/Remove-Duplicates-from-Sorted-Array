@@ -1,0 +1,24 @@
+{
+  "name": "remove-duplicates-from-sorted-array",
+  "version": "1.0.0",
+  "description": "Решение задачи leetcode удаление дубликатов из отсортированного массива на javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "leetcode",
+    "javascript",
+    "top",
+    "interview",
+    "questions",
+    "easy",
+    "array"
+  ],
+  "author": "pro algorithm",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  },
+  "dependencies": {}
+}
