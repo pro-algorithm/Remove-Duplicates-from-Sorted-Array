@@ -1,0 +1,339 @@
+:root {
+    --color-1: hsl(47, 100%, 83%);
+    --color-2: hsl(8, 100%, 85%);
+    --color-3: hsl(92, 58%, 80%);
+    --color-4: hsl(200, 77%, 86%);
+    --color-5: hsl(240, 77%, 83%);
+    --color-6: hsl(138, 77%, 86%);
+    --color-8: hsl(178, 77%, 86%);
+    --color-7: hsl(280, 77%, 85%);
+    --color-9: hsl(320, 77%, 86%);
+}
+
+.page {
+    font-family: Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.logo__link-img {
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+}
+
+.header__title {
+    text-align: center;
+    font-size: 1.5em;
+    flex-grow: 1;
+}
+
+.nav {
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+
+}
+
+.nav__item {
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    background-color: #fafafa;
+    margin: 5px;
+    padding: 5px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card__description {
+    min-height: 9em;
+    margin: 0.5em auto;
+}
+
+.card__info-wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card__cubes {
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    margin-right: 20px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.box__img {
+    width: 3em;
+    height: 3em;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.box__img--in {
+    background-image: url("../img/box-down.png");
+}
+
+.box__img--out {
+    background-image: url("../img/box-up.png");
+}
+
+.box__title {
+    align-self: center;
+}
+
+.card__cubes {
+    min-width: 40%;
+    box-sizing: border-box;
+    flex-grow: 2;
+    flex-direction: column;
+}
+
+.card__boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.card__cubes-wrapper {
+    box-sizing: border-box;
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    margin: 0 auto;
+    flex-direction: column;
+    position: relative;
+    min-width: 90%;
+}
+
+.card__image-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.card__cubes-array {
+    display: flex;
+}
+
+.card__arrow-wrapper {
+    position: relative;
+}
+
+.card__arrow {
+    width: 30px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+.card__arrow-text {
+    font-size: 1.25em;
+}
+
+.card__arrow--top {
+    background-image: url(../img/arrow-green-24.png);
+    background-image: -webkit-image-set(
+            url(../img/arrow-green-24.png) 1x,
+            url(../img/arrow-green-48.png) 2x
+    );
+    background-image: image-set(
+            url(../img/arrow-green-24.png) 1x,
+            url(../img/arrow-green-48.png) 2x
+    );
+    transform: rotate(90deg);
+}
+
+.card__arrow--bottom {
+    background-image: url(../img/arrow-yellow-24.png);
+    background-image: -webkit-image-set(
+            url(../img/arrow-yellow-24.png) 1x,
+            url(../img/arrow-yellow-48.png) 2x
+    );
+    background-image: image-set(
+            url(../img/arrow-yellow-24.png) 1x,
+            url(../img/arrow-yellow-48.png) 2x
+    );
+    transform: rotate(-90deg);
+}
+
+.cube {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 0.25em 0 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Bradley Hand", cursive;
+    font-size: 1.25em;
+}
+
+@media(max-width: 375px){
+    .box__title{
+        font-size: 0.75em;
+    }
+    .cube{
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+        font-size: 1em;
+    }
+    .card__arrow-text{
+        font-size: 1em;
+    }
+
+    .card__code-img{
+        width: 95%;
+    }
+
+    .btn__prev{
+        font-size: 0;
+        width: 40px;
+        height: 40px;
+        display: block;
+    }
+
+    .btn__retry{
+        font-size: 0;
+        width: 40px;
+        height: 40px;
+        display: block;
+    }
+
+    .btn__next{
+        font-size: 0;
+        width: 40px;
+        height: 40px;
+        display: block;
+    }
+    .card__description{
+        min-height: auto;
+    }
+}
+
+.cube--color1 {
+    background-color: var(--color-1);
+}
+
+.cube--color2 {
+    background-color: var(--color-2);
+}
+
+.cube--color3 {
+    background-color: var(--color-3);
+}
+
+.cube--color4 {
+    background-color: var(--color-4);
+}
+
+.cube--color5 {
+    background-color: var(--color-5);
+}
+
+.cube--color6 {
+    background-color: var(--color-6);
+}
+
+.cube--color7 {
+    background-color: var(--color-7);
+}
+
+.cube--color8 {
+    background-color: var(--color-8);
+}
+
+.cube--color9 {
+    background-color: var(--color-9);
+}
+
+.card__code-text {
+    visibility: hidden;
+    overflow: hidden;
+    height: 20px;
+}
+
+.clipboard {
+    position: relative;
+}
+
+.clipboard__modal {
+    position: absolute;
+    display: none;
+}
+
+.clipboard__modal--active {
+    display: block;
+}
+
+.btn__prev {
+    padding-left: 20px;
+    background-image: url(../img/arrow-back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+}
+
+.btn__retry {
+    padding-left: 25px;
+    background: url(../img/repeat.png) no-repeat;
+    background-size: contain;
+}
+
+.btn__next {
+    padding-right: 20px;
+    background-image: url(../img/arrow-forward.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 0;
+}
+
+.btn--disable {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+
+.card__arrow--disable {
+    visibility: hidden;
+}
+
+.card__navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden {
+    visibility: hidden;
+}

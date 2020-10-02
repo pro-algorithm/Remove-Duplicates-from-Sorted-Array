@@ -1,0 +1,29 @@
+{
+  "name": "visual-algorithm",
+  "version": "1.0.0",
+  "description": "Визуализация алгоритма удаления дубликатов из отсортированного массива",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pro-algorithm/Remove-Duplicates-from-Sorted-Array.git"
+  },
+  "keywords": [
+    "leetcode"
+  ],
+  "author": "pro algorithm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pro-algorithm/Remove-Duplicates-from-Sorted-Array/issues"
+  },
+  "homepage": "https://github.com/pro-algorithm/Remove-Duplicates-from-Sorted-Array#readme",
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.1"
+  }
+}

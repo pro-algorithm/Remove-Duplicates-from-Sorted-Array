@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Визуализация алгоритма</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+    <script src="js/index.js" type="module" defer></script>
+</head>
+<body class="page">
+<header class="header">
+    <div class="logo">
+        <a href="index.html" class="logo__link-img"></a>
+    </div>
+    <h1 class="header__title">Визуализация алгоритма для задачи<br> "Remove Duplicates from Sorted Array"</h1>
+    <nav class="nav hidden">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="../README.md" class="nav__link">Описание задачи</a></li>
+            <li class="nav__item"><a href="../Solution/index.js" class="nav__link">Посмотреть решение</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Скринкаст с объяснением решения</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Статья с объяснением решения</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <div class="card">
+            <h2 class="card__title">Шаг 1</h2>
+            <p class="card__description">Если массив nums пуст? Если массив состоит из одного элемента?</p>
+            <div class="card__info-wrapper">
+                <div class="card__cubes">
+                    <div class="card__boxes">
+                        <div class="box box--in">
+                            <span class="box__title">nums</span>
+                            <div class="box__img box__img--in"></div>
+                        </div>
+                        <div class="box box--out hidden">
+                            <span class="box__title">nums</span>
+                            <div class="box__img box__img--out"></div>
+                        </div>
+                    </div>
+                    <div class="card__cubes-wrapper">
+                        <div class="card__arrow-wrapper card__arrow-wrapper--top card__arrow--disable">
+                            <pre class="card__arrow-text card__arrow-text--top">i = 01</pre>
+                            <div class="card__arrow card__arrow--top"></div>
+                        </div>
+                        <div class="card__cubes-array"></div>
+                        <div class="card__arrow-wrapper card__arrow-wrapper--bottom card__arrow--disable">
+                            <div class="card__arrow card__arrow--bottom "></div>
+                            <pre class="card__arrow-text card__arrow-text--bottom">j = 01</pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__code">
+                    <picture class="card__code-picture">
+                        <img class="card__code-img" src="img/step1-1x.png" alt="Строка кода"
+                             srcset="img/step1-2x.png 2x, img/step1-4x.png 4x">
+                    </picture>
+                    <div class="clipboard">
+                        <button class="card__btn-copy clipboard__btn">Копировать</button>
+                        <div class="clipboard__modal">
+                            <p class="clipboard__text">Скопировано в буфер обмена</p>
+                        </div>
+                    </div>
+                    <pre class="card__code-text">if (nums.length <= 1) return nums.length;</pre>
+                </div>
+            </div>
+            <div class="card__navigation">
+                <div class="card__prev btn"><a href="#" data-title="Предыдущий шаг" class="btn__prev btn--disable">Предыдущий шаг</a></div>
+                <div class="card__retry btn"><a href="#" data-title="Повторить с начала" class="btn__retry btn--disable">Повторить с начала</a></div>
+                <div class="card__next btn"><a href="#" data-title="Следующий шаг" class="btn__next">Следующий шаг</a></div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="social">
+        <span>Подпишись в социальных сетях</span>
+    </div>
+    <div class="copyright">
+        &copy pro.algorithm, 2020
+    </div>
+</footer>
+
+
+</body>
+</html>
